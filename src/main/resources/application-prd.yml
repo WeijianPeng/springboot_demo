@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    default-auto-commit: true
+  flyway:
+    enabled: false

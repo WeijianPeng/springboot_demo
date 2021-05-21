@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataset>
+    <example_resource id="00001" name="xxxxxxx1" />
+    <example_resource id="00002" name="xxxxxxx2" />
+    <example_resource id="00003" name="xxxxxxx3" />
+    <example_resource id="00004" name="xxxxxxx4" />
+    <example_resource id="00005" name="xxxxxxx5" />
+    <example_resource id="00006" name="xxxxxxx6" />
+    <example_resource id="00007" name="xxxxxxx7" />
+    <example_resource id="00008" name="xxxxxxx8" />
+    <example_resource id="00009" name="xxxxxxx9" />
+</dataset>

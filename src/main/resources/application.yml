@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: ${SPRING_ACTIVE_PROFILE:dev}
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.china.demo.example.infrastructure.persistence.mybatis
+
+#spring:
+#  datasource:
+#    driverClassName: com.mysql.cj.jdbc.Driver

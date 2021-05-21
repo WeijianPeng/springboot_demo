@@ -1,0 +1,48 @@
+apply plugin: 'jacoco'
+
+
+jacoco {
+    toolVersion = '0.8.2'
+}
+
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'CLASS'
+            excludes = [
+                    "com.china.demo.example.*.*Builder",
+                    "com.china.demo.example.*.*DBO",
+                    "com.china.demo.example.*.*DTO",
+                    "com.china.demo.example.controller.common.*",
+                    "com.china.demo.example.controller.dto.*",
+                    "com.china.demo.example.controller.ExampleController",
+                    "com.china.demo.example.controller.exception.*",
+                    "com.china.demo.example.domain.*.entity.*",
+                    "com.china.demo.example.domain.*.valueobject.*",
+                    //"com.china.demo.example.domain.example.*",
+                    "com.china.demo.example.domain.exception.*",
+
+                    "com.china.demo.example.infrastructure.agent.*",
+
+                    "com.china.demo.example.infrastructure.Utils"
+            ]
+            limit {
+                minimum = 0.60
+            }
+        }
+    }
+}
+
+
+jacocoTestReport{
+    reports{
+        xml.enabled false
+        csv.enabled false
+        html.enabled true
+    }
+}
+
+jacocoTestCoverageVerification.dependsOn jacocoTestReport
+
+check.dependsOn jacocoTestCoverageVerification
